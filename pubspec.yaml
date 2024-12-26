@@ -1,0 +1,63 @@
+name: atomicoat
+description: A Flutter application for controlling ALD machines.
+
+publish_to: 'none'
+
+version: 1.0.0+3
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # State Management
+  flutter_bloc: ^8.1.3
+  # Dependency Injection
+  get_it: ^7.6.4
+  # Functional Programming
+  dartz: ^0.10.1
+  # Value Equality
+  equatable: ^2.0.5
+  # Code Generation
+  freezed_annotation: ^2.4.1
+  # Local Storage
+  shared_preferences: ^2.2.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # Network
+  http: ^1.1.0
+  internet_connection_checker: ^1.0.0+1
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  # Logging
+  logger: ^2.0.2+1
+  dio: ^5.7.0
+  bloc_test: ^9.1.7
+  fl_chart: ^0.69.2
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+  freezed: ^2.4.5
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+  assets:
+    - assets/ald_system_diagram.png
+    - assets/initial_components.json
